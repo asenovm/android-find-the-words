@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background_repeated"
+    tools:context=".SplashActivity" >
+
+    <ImageView
+        android:id="@+id/splash_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/splash_content_description_focus"
+        android:src="@drawable/splash_background_focus" />
+
+    <com.asenovm.words.views.RobotoThinTextView
+        android:id="@+id/splash_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/splash_loading_bottom_margin"
+        android:text="@string/splash_loading"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/splash_size_font" />
+
+    <com.asenovm.words.views.VersionTextView
+        android:id="@+id/splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/splash_size_font" />
+
+    <LinearLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.07"
+        android:background="@drawable/splash_background_words_repeated"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

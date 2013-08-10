@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="splash_size_font">13sp</dimen>
+    <dimen name="splash_loading_bottom_margin">16dp</dimen>
+    <dimen name="home_menu_button_size_text">27dp</dimen>
+
+</resources>

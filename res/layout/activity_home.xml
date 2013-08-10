@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background_repeated"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/splash_content_description_focus"
+        android:src="@drawable/home_background_focus" />
+
+    <com.asenovm.words.views.RobotoThinTextView
+        android:id="@+id/home_button_play"
+        style="@style/home_menu_button_item"
+        android:layout_below="@id/home_title"
+        android:text="@string/home_menu_play" />
+
+    <com.asenovm.words.views.RobotoThinTextView
+        android:id="@+id/home_button_settings"
+        style="@style/home_menu_button_item"
+        android:layout_below="@id/home_button_play"
+        android:text="@string/home_menu_settings" />
+
+    <com.asenovm.words.views.RobotoThinTextView
+        android:id="@+id/home_button_high_scores"
+        style="@style/home_menu_button_item"
+        android:layout_below="@id/home_button_settings"
+        android:text="@string/home_menu_high_scores" />
+
+    <com.asenovm.words.views.RobotoThinTextView
+        android:id="@+id/home_button_achievements"
+        style="@style/home_menu_button_item"
+        android:layout_below="@id/home_button_high_scores"
+        android:text="@string/home_menu_achievements" />
+
+</RelativeLayout>
