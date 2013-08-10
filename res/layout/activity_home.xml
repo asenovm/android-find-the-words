@@ -13,6 +13,14 @@
         android:contentDescription="@string/splash_content_description_focus"
         android:src="@drawable/home_background_focus" />
 
+    <LinearLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:background="@drawable/splash_background_words_repeated"
+        android:orientation="horizontal" />
+
     <com.asenovm.words.views.RobotoThinTextView
         android:id="@+id/home_button_play"
         style="@style/home_menu_button_item"
